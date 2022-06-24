@@ -269,6 +269,7 @@ footer{
 .soc-media-ul li {
   display: inline-block;
   margin: 20px;
+  margin-top: 50px;
 }
 
 .soc-media-ul {
@@ -282,26 +283,15 @@ footer{
   padding: 6px 9px 9px;
   font-size: 25px;
   color: #000;
-  border-radius: 50%;
-  border: 2px solid;
-  align-items: center;
 }
 .soc-media-ul a:hover, .soc-media-ul a:focus {
   color: #DCD0FF;
 }
 
-
-
 @media (max-width: 600px) {
 .soc-media-ul a { 
   display: inline-block, flex;
   justify-content: center;
-  padding: 6px 9px 9px;
-  font-size: 25px;
-  color: #000;
-  border-radius: 50%;
-  border: 2px solid;
-  align-items: center;
   }
 }
 
