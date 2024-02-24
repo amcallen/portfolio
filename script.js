@@ -7,3 +7,13 @@ $(function() {
   });
 });
 
+function openPopup(title, imageSrc, description) {
+  document.getElementById('popup-title').textContent = title;
+  document.getElementById('popup-image').src = imageSrc;
+  document.getElementById('popup-description').textContent = description;
+  document.getElementById('popup').style.display = 'block';
+}
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
