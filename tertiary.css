@@ -1,0 +1,304 @@
+/*Typography*/
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+body {
+    font-family: playfair-display, serif;
+    font-weight: 300;
+    background-size: cover;
+    background-color: black;
+    line-height: 2; 
+    color: #000;
+  }
+  
+.sec-contact .btn {
+    text-transform: uppercase;
+  }
+  
+.soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+  }
+
+/* Container for title and image */
+.col-md-6 {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+/* Image container */
+.image-container {
+    display: inline-block;
+}
+
+/* Image */
+.img-responsive {
+    width: 130%;
+    height: auto;
+    border: 2px solid white;
+    padding: 10px;
+}
+
+  /* Title */
+h1 {
+    text-align: center;
+    color: #0040ff;
+    text-align: left;
+    margin-top: 50px; 
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  /* Individual letter styles */
+.color-letter {
+    display: inline-block;
+  }
+  .color-letter:nth-child(1) {
+    color: #ff0000; /* Red */
+  }
+  
+  .color-letter:nth-child(2) {
+    color: #ff4000; /* Vermilion */
+  }
+  
+  .color-letter:nth-child(3) {
+    color: #ff8000; /* Orange */
+  }
+  
+  .color-letter:nth-child(4) {
+    color: #ffbf00; /* Amber */
+  }
+  
+  .color-letter:nth-child(5) {
+    color: #ffff00; /* Yellow */
+  }
+  
+  .color-letter:nth-child(6) {
+    color: #bfff00; /* Lime */
+  }
+  
+  .color-letter:nth-child(7) {
+    color: #80ff00; /* Chartreuse */
+  }
+  
+  .color-letter:nth-child(8) {
+    color: #40ff00; /* Harlequin */
+  }
+  
+  .color-letter:nth-child(9) {
+    color: #00ff00; /* Green */
+  }
+  
+  .color-letter:nth-child(10) {
+    color: #00ff40; /* Erin */
+  }
+  
+  .color-letter:nth-child(11) {
+    color: #00ff80; /* Aqua */
+  }
+  
+  .color-letter:nth-child(12) {
+    color: #00ffbf; /* Cyan */
+  }
+  
+  .color-letter:nth-child(13) {
+    color: #00ffff; /* Azure */
+  }
+  
+  .color-letter:nth-child(14) {
+    color: #00bfff; /* Sky Blue */
+  }
+  
+  .color-letter:nth-child(15) {
+    color: #0080ff; /* Ultramarine */
+  }
+  
+  .color-letter:nth-child(16) {
+    color: #0040ff; /* Blue */
+  }
+  
+  .color-letter:nth-child(17) {
+    color: #4000ff; /* Blue Violet */
+  }
+  
+  .color-letter:nth-child(18) {
+    color: #8000ff; /* Violet */
+  }
+  
+  .color-letter:nth-child(19) {
+    color: #bf00ff; /* Purple */
+  }
+  
+  .color-letter:nth-child(20) {
+    color: #ff00ff; /* Magenta */
+  }
+  
+  .color-letter:nth-child(21) {
+    color: #ff00bf; /* Rose */
+  }
+  
+  .color-letter:nth-child(22) {
+    color: #ff0080; /* Crimson */
+  }
+  
+  .color-letter:nth-child(23) {
+    color: #ff0040; /* Vermilion */
+  }
+  
+  .color-letter:nth-child(24) {
+    color: #ff0000; /* Red */
+  }
+  
+  .color-letter:nth-child(25) {
+    color: #ff4000; /* Orange */
+  }
+  
+  .color-letter:nth-child(26) {
+    color: #ff8000; /* Amber */
+  }
+  
+  .color-letter:nth-child(27) {
+    color: #ffff00; /* Yellow */
+  }
+  
+  .color-letter:nth-child(28) {
+    color: #bfff00; /* Lime */
+  }
+  
+  .color-letter:nth-child(29) {
+    color: #80ff00; /* Chartreuse */
+  }
+  
+  
+  /*=Base=*/
+.text-muted {
+    text-align: justify;
+    color: white;
+  }
+
+  .section1, .section2 {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  .section3{
+    margin-top: -50px;
+  }
+  
+  .section1 h2, .section2 h2, .section3 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 10%;
+  }
+  
+  .section1 h2 {
+    color: #00FF7F; 
+  }
+  
+  .section2 h2 {
+    color: #7F00FF; 
+  }
+  
+  .section3 h2 {
+    color: #FF007F; 
+  }
+  
+  .section1 p, .section2 p, .section3 p {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  /*Header*/ 
+ /* Navbar Background and Border */
+ .navbar-default {
+   background-color: #ffffff;
+   border: none;
+   padding-top: 1em;
+ }
+ 
+ /* Brand Logo/Name Styling */
+ .navbar-default .navbar-brand {
+   padding: 15px 15px;
+   font-size: 20px;
+   color: #000;
+ }
+ 
+ /* Navbar Toggle Button Styling */
+ .navbar-default .navbar-toggle {
+   border-color: #000;
+ }
+ 
+ /* Navigation Links Styling */
+ .navbar-default .navbar-nav > li > a {
+   color: #000;
+   font-size: 20px;
+ }
+ 
+ /* Hover/Focus Styling for Links */
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+   color: #DCD0FF;
+ }
+ 
+ /* Navbar Toggler Icon Bar Styling */
+ .navbar-default .navbar-toggle .icon-bar {
+   background-color: #000;
+ }
+
+    /*Footer*/
+    .main-footer{
+        display: flex;
+        justify-content: center;
+      }
+      
+      footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .main-footer > .footer-content {
+          position: relative;
+      }
+      
+      .fa-brands, .fa-solid {
+        color: #000;
+      }
+      
+      .fa-brands:hover, .fa-solid:hover {
+        color: #DCD0FF;
+      }
+      
+      
+      .soc-media-ul li {
+        display: inline-block;
+        margin: 20px;
+        margin-top: 50px;
+      }
+      
+      .soc-media-ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .soc-media-ul a {
+        display: inline-block, flex;
+        padding: 6px 9px 9px;
+        font-size: 25px;
+        color: #B8B8B8;
+      }
+      .soc-media-ul a:hover, .soc-media-ul a:focus {
+        color: #DCD0FF;
+      }
+      
+      @media (max-width: 600px) {
+      .soc-media-ul a { 
+        display: inline-block, flex;
+        justify-content: center;
+        }
+      }
+      

@@ -217,7 +217,7 @@ margin-right: 40px;
 }
 
 .close {
-  color: black;
+  color: bl;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -366,3 +366,10 @@ footer{
   }
 }
 
+#identityimg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 200px;
+}

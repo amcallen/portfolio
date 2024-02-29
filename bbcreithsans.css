@@ -1,0 +1,189 @@
+/*Typography*/
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+body {
+    font-family: playfair-display, serif;
+    font-weight: 300;
+    background-size: cover;
+    background-color: black;
+    line-height: 2; 
+    color: #000;
+  }
+  
+.sec-contact .btn {
+    text-transform: uppercase;
+  }
+  
+.soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+  }
+
+/* Container for title and image */
+.col-md-6 {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+/* Image container */
+.image-container {
+    display: inline-block;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: #8bbca0;
+    margin-top: 50px;
+    font-size: 36px; 
+    font-weight: bold;
+    font-family: "BBC Reith Sans";
+    white-space: nowrap; 
+    margin-left: -15%;
+}
+
+.img-responsive {
+    display: inline-block;
+    max-width: 150%; 
+    height: auto;
+    border: 2px solid white;
+    margin-left: 35%;
+
+}
+
+  /*=Base=*/
+.text-muted {
+    text-align: justify;
+    color: white;
+  }
+
+  .section1, .section2 {
+    padding: 20px;
+    margin-top: 30px;
+  }
+  .section3{
+    margin-top: -50px;
+  }
+  
+  .section1 h2, .section2 h2, .section3 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    font-family: "BBC Reith Sans";
+  }
+  
+  .section1 h2 {
+    color: #8bbca0; 
+  }
+  
+  .section2 h2 {
+    color: #8bbca0; 
+  }
+  
+  .section3 h2 {
+    color: #8bbca0; 
+  }
+  
+  .section1 p, .section2 p, .section3 p {
+    color: white;
+    font-size: 16px;
+    text-align: justify;
+    font-family: "BBC Reith Sans";
+  }
+
+ /*Header*/ 
+/* Navbar Background and Border */
+.navbar-default {
+  background-color: #b0b9d6;
+  border: none;
+  padding-top: 1em;
+}
+
+/* Brand Logo/Name Styling */
+.navbar-default .navbar-brand {
+  padding: 15px 15px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Navbar Toggle Button Styling */
+.navbar-default .navbar-toggle {
+  border-color: #000;
+}
+
+/* Navigation Links Styling */
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+  font-size: 20px;
+}
+
+/* Hover/Focus Styling for Links */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #DCD0FF;
+}
+
+/* Navbar Toggler Icon Bar Styling */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+
+ /*Footer*/
+.main-footer{
+        display: flex;
+        justify-content: center;
+      }
+      
+      footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .main-footer > .footer-content {
+          position: relative;
+      }
+      
+      .fa-brands, .fa-solid {
+        color: #000;
+      }
+      
+      .fa-brands:hover, .fa-solid:hover {
+        color: #DCD0FF;
+      }
+      
+      
+      .soc-media-ul li {
+        display: inline-block;
+        margin: 20px;
+        margin-top: 50px;
+      }
+      
+      .soc-media-ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .soc-media-ul a {
+        display: inline-block, flex;
+        padding: 6px 9px 9px;
+        font-size: 25px;
+        color: #30647c;
+      }
+      .soc-media-ul a:hover, .soc-media-ul a:focus {
+        color: #DCD0FF;
+      }
+      
+      @media (max-width: 600px) {
+      .soc-media-ul a { 
+        display: inline-block, flex;
+        justify-content: center;
+        }
+      }
+      

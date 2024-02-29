@@ -1,4 +1,4 @@
-/*=Typography=*/
+/*Typography*/
 html {
     font-size: 16px;
     overflow-x: hidden;
@@ -7,20 +7,7 @@ html {
   body {
     font-family: playfair-display, serif;
     font-weight: 300;
-  }
-  
-  .navbar a {
-    text-align: center;
-  }
-  .navbar .navbar-brand {
-    font-size: 30px;
-    color: #000;
-  }
-  
-  .navbar {
-    font-size: 20px;
-    color: #000;
-    background-image: url('background.jpg');
+    background-size: cover;
   }
   
   .sec-contact .btn {
@@ -31,12 +18,7 @@ html {
     text-align: center;
     text-decoration: none;
   }
-
-  img {
-    max-width: 30%;
-    height: auto;
-}
-
+  
   /*=Base=*/
   
   section {
@@ -45,53 +27,290 @@ html {
     display: table;
     margin: 0;
     max-width: none;
+    background-color: #ffffff;
     height: 100vh;
     margin-bottom: -100px;
   }
-  
-  footer {
-    padding: 2em 0;
-  }
-  
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-  
-  /*Header*/
-  .navbar-default {
-    border: none;
-    padding-top: 1em;
-    
-  }
-  
-  .navbar .fa-external-link {
-    vertical-align: top;
-  }
-  
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
-    color: #DCD0FF;
-    font-weight: 450;
-  }
-  
-  .navbar-default .navbar-nav > li > a:active {
-    color: #DCD0FF;
-    font-weight: 450;
-  }
-  
 
+  .portfolio__project img,
+  .identity-item img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%; 
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 30px;
+      
+  }
+  
+  /*Header*/ 
+/* Navbar Background and Border */
+.navbar-default {
+  background-color: #ffffff;
+  border: none;
+  padding-top: 1em;
+}
+
+/* Brand Logo/Name Styling */
+.navbar-default .navbar-brand {
+  padding: 15px 15px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Navbar Toggle Button Styling */
+.navbar-default .navbar-toggle {
+  border-color: #000;
+}
+
+/* Navigation Links Styling */
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+  font-size: 20px;
+}
+
+/* Hover/Focus Styling for Links */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #DCD0FF;
+}
+
+/* Navbar Toggler Icon Bar Styling */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+
+  /*Landing*/
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.landing p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.landing .btn {
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #c4def7;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.landing .btn:hover {
+    background-color: #adabd5;
+}
   .mainName{
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically */
+    justify-content: center; 
     text-align: center;
     min-height: 100vh;
+  }
+  
+  /*Portfolio*/
+  .portfolio__project .row {
+    margin-bottom: 3em;
+  }
+  
+  .portfolio__project-wrapper {
+    padding: 20px;
+    margin-left: 65px;
+    margin-right: 40px;
+  }
+  
+  .portfolio__project {
+      position: relative;
+      height: auto;
+      padding: 0;
+      overflow: hidden;
+  }
+  .portfolio__project__preview {
+      position: relative;
+      top: 0;
+      height: auto;
+  }
+  
+  
+  .portfolio__project__description {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      padding: 1.8em 1.3em;
+      background: #fff;
+    
+  }
+  
+  .portfolio__project__name {
+      font-family: playfair-display, serif;
+      font-size: 1.8em;
+      font-weight: 500;
+      margin: 0;
+      margin-bottom: .2em;
+      color: #000000;
+  }
+  
+  
+  .portfolio__project__preview,
+  .portfolio__project__description {
+      transition: all 600ms ease;
+  }
+  
+  .portfolio__project:hover .portfolio__project__description {
+      transform: translateY(-100%);
+  }
+  .portfolio__project:hover .portfolio__project__preview {
+      transform: translateY(-2.5em);
+  }
+  
+  @media only screen and (max-width: 768px) {
+    *, html, body, .row {
+       margin-left:5px !important;
+       margin-right:5px !important;
+       padding-left:3px !important;
+       padding-right:5px !important;
+    }
+  }
+
+  /* Identity section */
+#identity {
+    padding: 50px 0;
+  }
+  
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+  
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6; 
+  }
+  
+#identitycontent {
+    font-family: 'Futura-Medium', sans-serif;
+    margin-top: 30px;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-bottom: 30px;
+  }
+  
+
+  /*About*/
+  
+.about-me .content h3 {
+    font-family: playfair-display, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #000;
+  }
+  
+.about-me img {
+    max-width: 100%;
+    border-radius: 3px;
+    border-color: #000;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.blur-shadow {
+    box-shadow: 0px 0px 32px #222;
+}
+
+.about-me .content p:last-child {
+    margin-bottom: 0;
+}
+
+.about .container {
+    background: #dddede;
+    padding: 30px;
+    font-family: playfair-display, serif;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 80px;
+}
+
+p {
+    font-family: playfair-display, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;  
+    line-height: 30px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about .container {
+        padding: 15px;
+    }
+}
+  
+  /*Contact*/
+  .contact-form {
+    margin: 0 auto; /* Center the form horizontally */
+    max-width: 400px; /* Optional: Add a maximum width to the form */
+  }
+  
+  form .center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .sec-contact {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: -100px;
+    margin-left: auto; /* Change margin-left to auto */
+    margin-right: auto; /* Add margin-right: auto; */
+  }
+  .sec-contact p {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 23px;
+    margin-top: 0px;
+  }
+  
+  .sec-contact .form-control:focus {
+    border-color: #DCD0FF;
+    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.075), 0 0 8px #DCD0FF;
+  }
+  
+  .sec-contact .btn {
+    padding: 0.5rem 1.75rem;
+    background: #000;
+    font-size: 0.95rem;
+    color: #fff;
+  }
+  .sec-contact .btn:hover, .sec-contact .btn:focus {
+    background: #DCD0FF;
+    border-color: #b9abe1;
+  }
+  .sec-contact .btn, a {
+    transition: all 0.25s;
   }
   
   /*Footer*/
@@ -100,18 +319,10 @@ html {
     justify-content: center;
   }
   
-  footer{
+  .footer{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url('background.jpg');
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    z-index: 10;
-    width: 100%;
-    padding: 10px;
-    margin-top: auto;
   }
   
   .main-footer > .footer-content {
@@ -155,5 +366,4 @@ html {
     justify-content: center;
     }
   }
-  
   

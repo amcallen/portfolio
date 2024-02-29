@@ -1,0 +1,168 @@
+/*Typography*/
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: playfair-display, serif;
+    font-weight: 300;
+    background-size: cover;
+    background-color: #c8e5e0;
+    line-height: 2; 
+    text-align: justify;
+    color: #000;
+
+  }
+  
+  .sec-contact .btn {
+    text-transform: uppercase;
+  }
+  
+  .soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /*=Base=*/
+  .carousel-container {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: -20%;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 30px; /* Change size of arrows */
+    color: #fff; /* Change color of arrows */
+  }
+
+.how-section1{
+    margin-top:-10%;
+    padding: 10%;
+    font-family: futura, sans-serif;
+}
+.how-section2{
+    margin-top:-10%;
+}
+.how-section1 h4{
+    color: #2e5fd8;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+.how-section1 .subheading{
+    color: #41393d;
+    font-size: 20px;;
+}
+.how-section1 .row
+{
+    margin-top: 20%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 100%;
+}
+  
+
+ /*Header*/ 
+/* Navbar Background and Border */
+.navbar-default {
+  background-color: #b0b9d6;
+  border: none;
+  padding-top: 1em;
+}
+
+/* Brand Logo/Name Styling */
+.navbar-default .navbar-brand {
+  padding: 15px 15px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* Navbar Toggle Button Styling */
+.navbar-default .navbar-toggle {
+  border-color: #000;
+}
+
+/* Navigation Links Styling */
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+  font-size: 20px;
+}
+
+/* Hover/Focus Styling for Links */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #DCD0FF;
+}
+
+/* Navbar Toggler Icon Bar Styling */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+
+
+    /*Footer*/
+    .main-footer{
+        display: flex;
+        justify-content: center;
+      }
+      
+      footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .main-footer > .footer-content {
+          position: relative;
+      }
+      
+      .fa-brands, .fa-solid {
+        color: #000;
+      }
+      
+      .fa-brands:hover, .fa-solid:hover {
+        color: #DCD0FF;
+      }
+      
+      
+      .soc-media-ul li {
+        display: inline-block;
+        margin: 20px;
+        margin-top: 50px;
+      }
+      
+      .soc-media-ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+      
+      .soc-media-ul a {
+        display: inline-block, flex;
+        padding: 6px 9px 9px;
+        font-size: 25px;
+        color: #4daeb6;
+      }
+      .soc-media-ul a:hover, .soc-media-ul a:focus {
+        color: #DCD0FF;
+      }
+      
+      @media (max-width: 600px) {
+      .soc-media-ul a { 
+        display: inline-block, flex;
+        justify-content: center;
+        }
+      }
+      

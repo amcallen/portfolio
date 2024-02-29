@@ -1,211 +1,246 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ashley McAllen's Portfolio</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
-<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-<link rel="stylesheet" href="./portfoliostyle.css">
-<link rel="stylesheet" href="https://use.typekit.net/mst0esv.css">
-<script src="https://kit.fontawesome.com/4ac04ce85f.js" crossorigin="anonymous"></script>
-
-
+    <meta charset="UTF-8">
+    <title>Ashley McAllen's Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Open Sans font -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
+    <!-- Font Awesome -->
+    <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="indexstyle.css">
+    <!-- Typekit font -->
+    <link rel="stylesheet" href="https://use.typekit.net/mst0esv.css">
+    <!-- Futura Medium font -->
+    <link href="https://fonts.cdnfonts.com/css/futura-medium" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4ac04ce85f.js" crossorigin="anonymous"></script>
+</head>
 <body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="index.html">Ashley McAllen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse"
+      aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#identity">Identity</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+  </div>
+</nav>
+
 
 <!-- Landing Section -->
 <div class="landing">
 <h1>Welcome to Ashley McAllen's Portfolio</h1>
-<p>Explore my work and projects below.</p>
+<p>Explore my work and projects below</p>
 <a href="#portfolio" class="btn">View Portfolio</a>
 </div>
 
 
-<!-- Navbar -->
-
-<div class="wrapper indexPage">
-  <header role="header">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">
-            <span class="sr-only">Toggle Navigation</span>
-            
-            <span class="icon-bar"></span>
-            
-            <span class="icon-bar"></span>
-            
-            <span class="icon-bar"></span>
-          </button>
-
-          <a href="index.html" class="navbar-brand">Ashley McAllen</a>
-        </div>
-
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right js-nav">
-            <li><a href="portfolio.html">Portfolio</a></li>
-            
-             <li><a   href="#about">About</a></li>
-
-             <li><a   href="#identity">Identity</a></li>
-
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  
 <!-- Portfolio -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <a href="paws&claws.html" target="_blank">
+                  <div class="portfolio__project">
+                     <div class="portfolio__project__preview">
+                        <img src="pawsclawszoom.jpg" alt="paws and claws logo">
+                          <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name">Paws & Claws</h3>
+                          </div>
+                     </div>
+                  </div>
+                </a>
+            </div>
 
-  <section id="portfolio" class="container main-section">
-<div class="portfolio__project-wrapper row">
+            <div class="col-lg-4 col-md-6">
+                <a href="saveourseas.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="soszoom.jpg" alt="save our seas">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name">Save Our Seas</h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
 
-  <div class="portfolio__project col-lg-4 col-sm-6">
-      <div class="portfolio__project__preview" onclick="openPopup('identity', 'Identity', 'identityzoom.jpg', 'Description of Identity')">
-          <img src="identityzoom.jpg" alt="identity logo">
-          <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                  <h3 class="portfolio__project__name">Identity</h3>
+            <div class="col-lg-4 col-md-6">
+                <a href="townrestaurant.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="townzoom.jpg" alt="town restaurant">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name">Town Restaurant Brochure, Menu, and Tabletop</h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="tertiary.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="tertiaryzoom.jpg" alt="tertiary">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name"> Tertiary </h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="amethystbayresort&spa.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="Amethyst Bay Zoom.jpg" alt="amethyst bay resort and spa">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name">Amethyst Bay Resort & Spa</h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="howtotakecareofabettafish.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="bettazoom.jpg" alt="betta">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name"> How to Take Care of a Betta Fish </h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <a href="townwebsite.html" target="_blank">
+              <div class="portfolio__project">
+                  <div class="portfolio__project__preview">
+                      <img src="Townwebzoom.jpg" alt="town web design">
+                      <div class="portfolio__project__description">
+                          <h3 class="portfolio__project__name"> Town Restaurant Web Design </h3>
+                      </div>
+                  </div>
               </div>
+              </a>
           </div>
-      </div>
-  </div>
-<!-- Popup Content -->
-<div id="popup" class="popup">
-  <div class="popup-content">
-      <span class="close" onclick="closePopup()">&times;</span>
-      <img id="popup-image" src="" alt="">
-      <h3 id="popup-title"></h3>
-      <p id="popup-description"></p>
-  </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="javabeencafe.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="javabeenzoom.jpg" alt="javabeen multiplatform design">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name"> Java Been Cafe Multiplatform Design </h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="bbcreithsans.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="homagezoom.jpg" alt="BBC Reith Sans">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name"> BBC Reith Sans Typography Homage </h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <a href="m&msadvertising.html" target="_blank">
+                <div class="portfolio__project">
+                    <div class="portfolio__project__preview">
+                        <img src="m&mszoom.jpg" alt="m&m's ad">
+                        <div class="portfolio__project__description">
+                            <h3 class="portfolio__project__name"> M&M's Advertisement Project </h3>
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
 </div>
+</div>
+</section>
+
+
+<!-- Identity -->
+<section id="identity" class="identity">
+    <div class="container">
+      <h2 class="section-title">Identity</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="identity-item">
+            <img src="identitycover.jpg" alt="Image 1">
+          </div>
+        </div>
+            <div class="col-lg-4 col-md-6">
+          <div class="identity-item">
+            <img src="identitylogousage.jpg" alt="Image 2">
+          </div>
+        </div>
+            <div class="col-lg-4 col-md-6">
+          <div class="identity-item">
+            <img src="McAllenA-StickerMockups.jpg" alt="Image 3">
+          </div>
+        </div>
+            <div class="col-lg-4 col-md-6">
+          <div class="identity-item">
+            <img src="McAllenA_ResumeDesign3.jpg" alt="Image 4">
+          </div>
+        </div>
+            <div class="col-lg-4 col-md-6">
+          <div class="identity-item">
+            <img src="McAllenA-StationaryMockup.jpg" alt="Image 5">
+          </div>
+        </div>
+            <div class="col-lg-4 col-md-6">
+            <div class="identity-item">
+              <img src="McAllenA-BusinessCardMockup.jpg" alt="Image 6">
+            </div>
+          </div>       
+      </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-12 content">
+            <div id="identitycontent">
+          <p class="text-justify">In crafting the visual identity for Am Design Studio, my personal initials "AM" from my name Ashley McAllen became the foundation. The journey of my logo’s design is a reflection of my professional evolution – it has been with me for many years, undergoing refinements rather than overhauls, showcasing my belief in the lasting power of a strong concept.</p>
+          <p class="text-justify">The emblematic feature of my brand's logo is the cloud that crowns the text. My fascination with clouds - their form, the science behind their formation, and their cultural symbolism - has deeply influenced this choice. They represent the transient and evolving nature of creativity, a perfect metaphor for the design process that transforms fleeting ideas into tangible art.</p>
+          <p class="text-justify">The stylistic alteration of the 'A', where its horizontal bar is replaced with a flowing, lowercase cursive 'm', symbolizes more than just a union of letters. It stands for harmony and continuity, principles I hold dear in my design practice. This fluid connection between the letters illustrates my approach to client relationships and project workflows – seamless, integrated, and cohesive.</p>
+          <p class="text-justify">I selected lavender for the 'm' to inject a sense of creativity and uniqueness into the logo, resonating with qualities integral to my work like elegance and introspection. Lavender is a color that communicates my individuality and the creative spirit I bring to every project. It also conveys a sense of calm and approachability, mirroring the experience I aim to provide my clients.</p>
+          <p class="text-justify">The ethos of my design philosophy is encapsulated in the simplicity and uniqueness of the logo. I believe that a minimalistic approach enhances recognizability and memorability – essential components of a strong personal brand. The simplicity is intentional, crafted to ensure the logo's adaptability across various mediums. Whether displayed on a business card, a website, or social media, it retains its visual impact and legibility, a testament to its thoughtful design.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </section>
   
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="pawsandclaws.html" target="_blank" title="paws&claws">
-        <div class="portfolio__project__preview">
-          <img src="pawsclawszoom.jpg" alt="paws and claws logo">    
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name">Paws & Claws</h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" target="_blank" title="save our seas">
-        <div class="portfolio__project__preview">
-          <img src="soszoom.jpg" alt="save our seas">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name">Save Our Seas</h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" title="town restaurant">
-        <div class="portfolio__project__preview">
-          <img src="townzoom.jpg" alt="town restaurant">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name">Town Restaurant Projects</h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" target="_blank" title="tertiary">
-        <div class="portfolio__project__preview">
-          <img src="tertiaryzoom.jpg" alt="tertiary">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name"> Tertiary </h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" title="amethyst bay">
-        <div class="portfolio__project__preview">
-          <img src="amethystzoom.jpg" alt="amethyst bay resort and spa">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name">Amethyst Bay Resort & Spa</h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" target="_blank" title="How to Take Care of a Betta Fish">
-        <div class="portfolio__project__preview">
-          <img src="bettazoom.jpg" alt="betta">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name"> How to Take Care of a Betta Fish </h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" target="_blank" title="javabeen multiplatform design">
-        <div class="portfolio__project__preview">
-          <img src="javabeenzoom.jpg" alt="javabeen multiplatform design">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name"> Java Been Cafe Multiplatform Design </h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" target="_blank" title="BBC Reith Sans">
-        <div class="portfolio__project__preview">
-          <img src="homagezoom.jpg" alt="BBC Reith Sans">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name"> BBC Reith Sans Typography Homage </h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="portfolio__project col-lg-4 col-sm-6">
-      <a href="#" target="_blank" title="m&msad">
-        <div class="portfolio__project__preview">
-          <img src="m&mszoom.jpg" alt="m&m's ad">
-            <div class="portfolio__project__description">
-              <div class="info-wrapper">
-                <h3 class="portfolio__project__name"> M&M's Advertisement Project </h3>
-              </div>
-            </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
+  
 <!-- About -->
 
   <section id="about" class="about">
@@ -221,7 +256,7 @@
                    I am currently a freelance Junior Graphic Artist studying at Southern New Hampshire University. 
                    I was lucky to find my passion for Graphic Design at a young age while attending the High School of Art and Design.
                    I'm endlessly curious about the ability of effective, authentic communication and how visual storytelling can be used to enact change.
-                   As a design student, I am very committed and passionate to continue to learn, grow and ehance my design skills.
+                   As a design student, I am very committed and passionate to continue to learn, grow and enhance my design skills.
                    <br>My skills include Photoshop, Illustrator and InDesign.
             </p>
         </div>
